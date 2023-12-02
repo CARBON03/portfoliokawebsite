@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Mohnish Singh</title>
+    <link href="./Assets/Css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Manrope:wght@300&family=Roboto&family=Rubik&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body id="body">
+
+    <!-- nav bar section starts  -->
+
+    <div id="nav_bar">
+        <header>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#project_title">PROJECTS</a></li>
+                <li><a href="https://mohnishsingh03.blogspot.com/">BLOG</a></li>
+                <li><a href="#contact_scroll">CONTACT</a></li>
+                <li><a href="#about_title">ABOUT</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- nav bar section ends  -->
+
+
+    <!-- main section starts including users picture -->
+
+    <div class="name">
+        <h1> Hi , I am Mohnish </h1>
+    </div>
+
+    <div class="profilepic" id="home">
+        <img src="./Assets/Media/Profilepic.png" alt="mohnish's profile pic" style="height: 30rem;  width: auto;" />
+    </div>
+
+    <div class="who_am_i">
+
+        <div id="who_me">
+            <h1>Who am I ?</h1>
+        </div>
+
+        <div class="detail1">
+            <h2 style="font-size: 2.5rem;">DEVLOPER</h2>
+            <p>I'm a front-end developer exploring Python and C programming, dedicated to crafting clean and efficient
+                code.
+            </p>
+        </div>
+
+        <div id="a">
+            <img src="./Assets/Media/a.jpg" alt="letter a" style="height: 10rem;  width: auto;" />
+        </div>
+
+        <div class="detail2">
+            <h2 style="font-size: 2.5rem;">DESIGNER</h2>
+            <p>A designer who makes websites easy for people to use by knowing what they want.</p>
+        </div>
+
+    </div>
+
+    <div id="a">
+        <div>
+            <img src="./Assets/Media/coder.gif" alt="letter a" style="  width: 100%;height: 260px;" />
+        </div>
+
+    </div>
+
+    <div class="detail1" id="not_phone_1">
+        <h2 style="font-size: 2.5rem;">DEVLOPER</h2>
+        <p>I'm a front-end developer exploring Python and C programming, dedicated to crafting clean and efficient code.
+        </p>
+    </div>
+
+
+    <div class="detail2" id="not_phone_2">
+        <h2 style="font-size: 2.5rem;">DESIGNER</h2>
+        <p>A designer who makes websites easy for people to use by knowing what they want.</p>
+    </div>
+
+
+
+
+    <!-- main section ends here -->
+
+
+    <!-- projects showcase section starts here -->
+
+    <div id="project_title">
+        <div>
+            <h3>Projects</h3>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div><a href="link"> <img class="example" src="./Assets/Media/PROJECT1.png" /> </a></div>
+        <div><a> <img class="example" src="./Assets/Media/PROJECT2.png" /></a></div>
+        <div><a> <img class="example" src="./Assets/Media/PROJECT3.png" /> </a></div>
+    </div>
+
+    <!-- projects showcase section ends here -->
+
+
+    <!-- about section starts here -->
+
+
+    <div id="about_title">
+        <div>
+            <h3 style="font-size: 3rem; color: black;">About Me</h3>
+        </div>
+    </div>
+
+    <div id="about">
+        <p class="about_paragraph" style="color: black;"> I'm Mohnish Singh, a first-year student pursuing Computer
+            Science at PCU.
+            I'm deeply passionate about technology. I have a good grasp of building websites,
+            working with Python, and I'm starting to explore machine learning—teaching computers
+            to learn on their own. Apart from software, I have a keen interest in electronics,
+            especially how things can connect to the internet (IoT). I'm eager to dive deeper into
+            that area! My ultimate goal is to develop software and hardware that positively impacts people's
+            lives.
+        </p>
+    </div>
+
+    <!-- about section ends here -->
+
+
+    <!-- contact section starts here -->
+
+    <div class="contact" id="contact_scroll">
+        <form onsubmit="sendmail() ; reset() ; return false;">
+            <h3>Get In Touch</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="email" placeholder="Email Id" required>
+            <input type="text" id="phone" placeholder="Phone" required>
+            <textarea id="message" rows="4" placeholder="How Can I Help You?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- contact section ends here -->
+
+    <!-- footer section starts -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer_ul">
+                        <li><a href="#contact_scroll">CONTACT</a></li>
+                        <li><a href="#about_title">ABOUT</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#project_title">PROJECTS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mohnish-singh-080321289/"><img
+                                src="./Assets/Media/linkedin.svg" alt="Linkdin" style="width:42px;height:42px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p id="copyright">
+                &copy; Copyright 2023 Mohnish Singh
+            </p>
+        </div>
+    </footer>
+
+    <!-- footer section ends-->
+
+    <!-- this script below is for contact form so that it can send the details to the mail atomatically -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendmail() {
+            Email.send({
+                SecureToken: "8be02e38-80dd-4fbe-9843-bc60724fc515",
+                To: 'mohnishsinghin@gmail.com',
+                From: "mohnishsingh03@gmail.com",
+                Subject: "New Contact Form Enquiry!!.",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> PhoneNo: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message => alert("message Sent Successfully")
+            );
+        }
+    </script>
+
+
+    <!-- for scroll efect through links   -->
+
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
